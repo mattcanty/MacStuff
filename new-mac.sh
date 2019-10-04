@@ -63,6 +63,8 @@ killall SystemUIServer
 brew cask install slack
 # Spotify
 brew cask install spotify
+# IntelliJ IDEA
+brew cask install intellij-idea
 
 ####### Dock Cleanup #######
 brew install dockutil
@@ -83,6 +85,7 @@ dockutil --remove 'Pages' --no-restart
 dockutil --remove 'Numbers' --no-restart
 dockutil --remove 'Keynote' --no-restart
 dockutil --remove 'iTunes' --no-restart
+dockutil --add "/Applications/IntelliJ IDEA.app" --after 'Safari' --no-restart
 dockutil --add "/Applications/Spotify.app" --after 'Safari' --no-restart
 dockutil --add "/Applications/Slack.app" --after 'Safari' --no-restart
 dockutil --add "/Applications/Utilities/Terminal.app" --after 'Safari' --no-restart
