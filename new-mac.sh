@@ -65,6 +65,8 @@ brew cask install slack
 brew cask install spotify
 # IntelliJ IDEA
 brew cask install intellij-idea
+# CircleCI CLI
+curl -fLSs https://circle.ci/cli | bash
 
 ####### Dock Cleanup #######
 brew install dockutil
