@@ -59,6 +59,8 @@ brew cask install spotify
 brew cask install intellij-idea
 ## CircleCI CLI
 curl -fLSs https://circle.ci/cli | bash
+## Terraform
+brew install terraform
 ## Oh My Zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
