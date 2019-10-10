@@ -55,8 +55,8 @@ defaults write ~/Library/Preferences/com.apple.AppleMultitouchTrackpad.plist "Cl
 brew cask install slack
 ## Spotify
 brew cask install spotify
-## IntelliJ IDEA
-brew cask install intellij-idea
+## VS Code
+brew cask install visual-studio-code
 ## CircleCI CLI
 curl -fLSs https://circle.ci/cli | bash
 ## Terraform
@@ -85,7 +85,7 @@ dockutil --remove 'Pages' --no-restart
 dockutil --remove 'Numbers' --no-restart
 dockutil --remove 'Keynote' --no-restart
 dockutil --remove 'iTunes' --no-restart
-dockutil --add "/Applications/IntelliJ IDEA.app" --after 'Safari' --no-restart
+dockutil --add "/Applications/Visual Studio Code.app" --after 'Safari' --no-restart
 dockutil --add "/Applications/Spotify.app" --after 'Safari' --no-restart
 dockutil --add "/Applications/Slack.app" --after 'Safari' --no-restart
 dockutil --add "/Applications/Utilities/Terminal.app" --after 'Safari' --no-restart
