@@ -66,9 +66,11 @@ brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ## Dockutil
 brew install dockutil
+## K8s
+###
+brew cask install minikube
 
 # Dock Cleanup
-dockutil --remove 'Mail' --no-restart
 dockutil --remove 'Contacts' --no-restart
 dockutil --remove 'Maps' --no-restart
 dockutil --remove 'Photos' --no-restart
