@@ -76,7 +76,7 @@ brew install dockutil
 ### Minikube
 brew cask install minikube
 ### kube-shell
-pip install kube-shell
+pip3 install kube-shell
 
 # Dock Cleanup
 dockutil --remove 'Contacts' --no-restart
