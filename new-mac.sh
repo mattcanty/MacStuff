@@ -3,7 +3,8 @@
 # Prerequisites
 ## Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+## Python
+brew install python
 # System Preferences
 ## Dock
 defaults write com.apple.dock orientation -string bottom
@@ -61,14 +62,21 @@ brew cask install visual-studio-code
 curl -fLSs https://circle.ci/cli | bash
 ## Terraform
 brew install terraform
-## Oh My Zsh
+## Terminal
+### Oh My Zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+### fzf
+brew install fzf
+### tmux
+brew install tmux
 ## Dockutil
 brew install dockutil
 ## K8s
-###
+### Minikube
 brew cask install minikube
+### kube-shell
+pip install kube-shell
 
 # Dock Cleanup
 dockutil --remove 'Contacts' --no-restart
