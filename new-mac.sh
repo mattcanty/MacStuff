@@ -61,8 +61,35 @@ defaults write ~/Library/Preferences/com.apple.AppleMultitouchTrackpad.plist "Cl
 brew cask install slack
 ## Spotify
 brew cask install spotify
-## VS Code
+## VSCode
 brew cask install visual-studio-code
+### VSCode Extenions
+code --install-extension ban.spellright
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension eamodio.gitlens
+code --install-extension EditorConfig.EditorConfig
+code --install-extension fabiospampinato.vscode-diff
+code --install-extension formulahendry.github-actions
+code --install-extension mathiasfrohlich.Kotlin
+code --install-extension mauve.terraform
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+code --install-extension ms-mssql.mssql
+code --install-extension redhat.java
+code --install-extension redhat.vscode-yaml
+code --install-extension ryu1kn.partial-diff
+code --install-extension sidneys1.gitconfig
+code --install-extension technosophos.vscode-helm
+code --install-extension tht13.html-preview-vscode
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-dependency
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-java-test
+code --install-extension vscjava.vscode-maven
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension zhuangtongfa.Material-theme
+
 ## CircleCI CLI
 curl -fLSs https://circle.ci/cli | bash
 ## Terraform
