@@ -90,7 +90,7 @@ code --install-extension yzhang.markdown-all-in-one
 code --install-extension zhuangtongfa.Material-theme
 
 ## CircleCI CLI
-curl -fLSs https://circle.ci/cli | bash
+brew install circleci
 ## Terraform
 brew install terraform
 ## Terminal
