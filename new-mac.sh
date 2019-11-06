@@ -9,6 +9,8 @@ networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
 ## Python
 brew install python
 # System Preferences
+## Keyboard
+defaults write -g ApplePressAndHoldEnabled -bool true
 ## Dock
 defaults write com.apple.dock orientation -string bottom
 defaults write com.apple.dock "show-recents" -int 0
