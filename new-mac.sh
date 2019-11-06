@@ -64,7 +64,6 @@ brew cask install spotify
 ## VSCode
 brew cask install visual-studio-code
 ### VSCode Extenions
-code --install-extension ban.spellright
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.EditorConfig
