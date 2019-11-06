@@ -95,6 +95,8 @@ dockutil --remove 'Pages' --no-restart
 dockutil --remove 'Numbers' --no-restart
 dockutil --remove 'Keynote' --no-restart
 dockutil --remove 'iTunes' --no-restart
+dockutil --remove 'Podcasts' --no-restart
+dockutil --remove 'TV' --no-restart
 dockutil --add "/Applications/Visual Studio Code.app" --after 'Safari' --no-restart
 dockutil --add "/Applications/Spotify.app" --after 'Safari' --no-restart
 dockutil --add "/Applications/Slack.app" --after 'Safari' --no-restart
