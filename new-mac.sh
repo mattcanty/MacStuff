@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Set DNS to Google
-networksetup -setdnsservers Wi-Fi 8.8.8.8 8.8.4.4
-
 # Prerequisites
 ## Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
