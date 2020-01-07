@@ -1,10 +1,19 @@
 #!/bin/bash
+set +xeu
 
 # Prerequisites
 ## Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-## Python
-brew install python
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+    brew update
+fi
+
+## Install Brewfile
+brew bundle install
+
 # System Preferences
 ## Keyboard
 defaults write -g ApplePressAndHoldEnabled -bool true
@@ -53,13 +62,6 @@ defaults write ~/Library/Preferences/com.apple.AppleMultitouchTrackpad.plist "Tr
 defaults write ~/Library/Preferences/com.apple.driver.AppleBluetoothMultitouch.trackpad.plist "Clicking" -int 1 
 defaults write ~/Library/Preferences/com.apple.AppleMultitouchTrackpad.plist "Clicking" -int 1
 
-# Additional Software and Tools
-## Slack
-brew cask install slack
-## Spotify
-brew cask install spotify
-## VSCode
-brew cask install visual-studio-code
 ### VSCode Extenions
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension eamodio.gitlens
@@ -86,24 +88,10 @@ code --install-extension vscjava.vscode-maven
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension zhuangtongfa.Material-theme
 
-## CircleCI CLI
-brew install circleci
-## Terraform
-brew install terraform
-## Terminal
-### Oh My Zsh
-brew install zsh
+## ZSH Install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-### fzf
-brew install fzf
-### tmux
-brew install tmux
-## Dockutil
-brew install dockutil
-## K8s
-### Minikube
-brew cask install minikube
-### kube-shell
+
+## kube-shell
 pip3 install kube-shell
 
 # Dock Cleanup
@@ -125,10 +113,16 @@ dockutil --remove 'Keynote' --no-restart
 dockutil --remove 'iTunes' --no-restart
 dockutil --remove 'Podcasts' --no-restart
 dockutil --remove 'TV' --no-restart
-dockutil --add "/Applications/Visual Studio Code.app" --after 'Safari' --no-restart
-dockutil --add "/Applications/Spotify.app" --after 'Safari' --no-restart
-dockutil --add "/Applications/Slack.app" --after 'Safari' --no-restart
-dockutil --add "/Applications/Utilities/Terminal.app" --after 'Safari' --no-restart
+dockutil --remove 'Mail' --no-restart
+dockutil --remove 'Calendar' --no-restart
+dockutil --remove 'Music' --no-restart
+dockutil --remove 'System Preferences' --no-restart
+dockutil --remove 'Safari' --no-restart
+dockutil --add "/Applications/Firefox.app" --after 'Finder' --no-restart
+dockutil --add "/Applications/Visual Studio Code.app" --after 'Finder' --no-restart
+dockutil --add "/Applications/Spotify.app" --after 'Finder' --no-restart
+dockutil --add "/Applications/Slack.app" --after 'Finder' --no-restart
+dockutil --add "/Applications/Utilities/Terminal.app" --after 'Finder' --no-restart
 
 # Restart Desktop
 killall Dock
