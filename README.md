@@ -4,7 +4,7 @@
 - Open terminal and run:
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/mattcanty/new-mac/master/new-mac.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/mattcanty/mac-stuff/master/new-mac.sh)"
 ```
 
 _Should be_ idempotent, no promises.
