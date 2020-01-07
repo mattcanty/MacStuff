@@ -1,0 +1,6 @@
+alias git-clean='git fetch --prune && git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+alias good="git checkout master && git pull && git rebase && git-clean"
+alias k=kubectl
+alias mk='minikube kubectl'
+alias shit='docker run -it --rm --entrypoint /bin/sh -v ${PWD}:/pwd -w /pwd'
+alias BLACKADDER='open https://www.youtube.com/embed/Daa8ZnxC-0Y\?autoplay\=1\&amp\;controls\=0\&amp\;start\=4'
